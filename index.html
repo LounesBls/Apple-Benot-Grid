@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custome CSS -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+
+        ul li {
+            transition: all .3s linear;
+        }
+    </style>
+    <!-- Title -->
+    <title>Aapple Bento Grid</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/10.jpeg" type="image/x-icon">
+</head>
+
+<body class="bg-gray-200">
+    <div class="container mx-auto h-screen py-24">
+        <h1 class="capitalize font-semibold text-2xl text-center underline mb-4">this is an apple bento Grid:
+        </h1>
+        <!-- Bento Ui -->
+        <ul
+            class="grid grid-cols-4 grid-rows-10 sm:grid-cols-6 md:grid-cols-12 sm:grid-rows-12  md:grid-rows-12 gap-x-2 gap-y-2 h-full">
+            <li
+                class="col-span-2 col-start-3 row-start-4 row-span-2 sm:col-span-2 sm:row-span-5 md:col-span-2 md:row-span-8 flex flex-col justify-around sm:justify-between items-center py-1 sm:p-4 bg-white rounded-xl">
+                <img class="w-1/4 md:w-full h-4/5" src="/assets/iPhone.png" alt="iphone image">
+                <h4 class="capitalize font-medium text-xs md:text-base text-wrap 2xl:text-balance">biggest-ever Photos
+                    update</h4>
+            </li>
+            <!-- 2 -->
+            <li
+                class="col-span-2 col-end-5 row-start-2 sm:col-span-2 sm:row-span-2 md:col-span-4 md:row-span-2 flex flex-col justify-center md:justify-between items-center py-1 bg-white rounded-xl">
+                <img class="w-5/6 h-4/5 md:w-5/6" src="/assets/2.png" alt="pannel">
+                <h4 class="capitalize text-center font-medium text-xs md:text-base">categorization in main</h4>
+            </li>
+            <!-- 3 -->
+            <li
+                class="col-span-2 col-start-1 row-start-3 sm:col-span-1 sm:row-span-4 md:col-span-2 md:row-span-4 flex flex-col justify-center md:justify-between items-center py-1 md:p-4 bg-white rounded-xl">
+                <img class="w-3/5 sm:w-full h-4/5 md:h-full" src="/assets/3.png" alt="text">
+                <h4 class="capitalize text-center font-medium text-xs md:text-base">text effects</h4>
+            </li>
+            <!-- 4 -->
+            <li
+                class="col-start-3 row-start-1 sm:col-span-2 sm:row-span-3 md:col-span-2 md:row-span-3 relative flex flex-col justify-between items-center bg-white rounded-xl">
+                <img class="w-full h-full rounded-xl" src="/assets/4.jpeg" alt="journal">
+                <h4 class="absolute sm:left-4 bottom-2 text-center text-balance text-xs font-medium capitalize">state of
+                    mind in
+                    journal</h4>
+            </li>
+            <!-- 5 -->
+            <li
+                class="col-start-4 col-end-5 row-start-1 sm:col-start-6 sm:col-end-7 sm:row-start-5 sm:row-span-3 md:col-span-2 md:row-span-3 relative flex flex-col justify-between items-center bg-white rounded-xl">
+                <img class="w-full h-full bg-black rounded-xl" src="/assets/5.png" alt="satellite">
+                <h4 class="absolute bottom-2 text-center text-white text-xs sm:text">messages via satellite</h4>
+            </li>
+            <!-- 6 -->
+            <li
+                class="col-start-3 col-span-2 row-start-6 row-span-1 sm:col-start-3 sm:col-end-5 sm:row-span-2 md:col-span-4 md:row-span-2 flex flex-col justify-between items-center py-1 md:p-4 bg-white rounded-xl">
+                <img class="w-full h-full rounded-xl" src="/assets/6.png" alt="text">
+            </li>
+            <!-- 7 -->
+            <li
+                class="col-start-4 col-end-5 row-start-3 sm:col-start-6 sm:row-start-5 sm:row-end-8 md:col-start-9 md:col-end-11 md:row-span-2 flex-col justify-between items-center pb-2 md:p-4 bg-white rounded-xl">
+                <img class="w-5/6 md:w-full h-4/5 mx-auto" src="/assets/7.png" alt="game mode">
+                <h4 class="capitalize text-center font-medium text-xs md:text-base">game mode</h4>
+            </li>
+            <!-- 8 -->
+            <li
+                class="sm:col-start-6 sm:row-start-1 sm:row-end-5 md:col-start-11 md:col-end-13 md:row-start-4 md:row-end-6 flex flex-col justify-between items-center bg-white rounded-xl">
+                <img class="w-full h-full bg-black rounded-xl" src="/assets/8.png" alt="calendar">
+            </li>
+            <!-- 9 -->
+            <li
+                class="sm:col-span-1 sm:row-start-6 sm:row-span-3 md:col-span-1 md:row-span-4 flex flex-col justify-around lg:justify-between items-center pt-1 sm:py-2 sm:px-1 bg-white rounded-xl">
+                <img class="w-full h-2/6 md:h-2/3" src="/assets/9.png" alt="wallet">
+                <h4 class="capitalize text-center text-balance font-medium text-[12px] sm:text-xs text-balance">
+                    installments &
+                    rewards in
+                    wallet
+                </h4>
+            </li>
+            <!-- 10 -->
+            <li
+                class="col-span-2 row-start-4 sm:col-start-1 sm:col-span-2 sm:row-start-9 sm:row-span-2 md:col-span-5 md:row-span-4 flex flex-col justify-between items-center bg-white rounded-xl">
+                <img class="w-full h-full rounded-xl" src="/assets/10.jpeg" alt="ios system">
+            </li>
+            <!-- 11 -->
+            <li
+                class="col-span-2 row-start-5 sm:col-start-1 sm:col-end-3 sm:row-span-2 md:col-span-4 md:row-span-2  flex flex-col justify-center items-center py-2 md:p-4 font-medium text-xs sm:text-base bg-white rounded-xl">
+                locked and hidden apps
+            </li>
+            <!-- 12 -->
+            <li
+                class="col-span-2 row-start-1 row-span-2 sm:col-span-2 sm:row-start-8 sm:row-span-3 md:col-span-2 md:row-span-4 relative flex flex-col justify-between items-center bg-white rounded-xl">
+                <img class="w-full h-full rounded-xl" src="/assets/12.jpeg" alt="control center customization">
+                <h4 class="absolute bottom-2 capitalize font-semibold text-center text-xs md:text-base ">control center
+                    customization</h4>
+            </li>
+            <!-- 13 -->
+            <li
+                class="col-span-2 sm:col-span-2 md:col-span-2 md:row-span-2 flex flex-col justify-between items-center bg-white rounded-xl">
+                <img class="w-1/2 md:w-full h-full bg-black rounded-xl" src="/assets/1_3.png" alt="messaging support">
+            </li>
+            <!-- 14 -->
+            <li
+                class="col-start-3 col-span-2 row-start-10 sm:col-span-2 sm:row-span-2 md:col-span-3 md:row-span-2 flex flex-col justify-center md:py-1 md:justify-around items-center py-1 px-4 bg-white rounded-xl">
+                <p
+                    class="capitalize flex items-center gap-1 font-semibold text-xs lg:text-base text-blue-500 bg-blue-100 px-1 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512">
+                        <path fill="#008bff"
+                            d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                    </svg>
+                    tomorrow at 10:00 AM
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512">
+                        <path fill="#008bff"
+                            d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                    </svg>
+                </p>
+                <h4 class="capitalize font-bold text-xs lg:text-base">send later in messages</h4>
+            </li>
+            <!-- 15 -->
+            <li
+                class="col-start-3 row-start-3 sm:col-span-1 sm:row-start-6 sm:row-end-9 md:col-start-8 md:row-span-4 flex sm:gap-3 flex-col items-center bg-white rounded-xl">
+                <img class="w-full h-2/5 sm:h-1/2" src="/assets/15_1.png" alt="larger icons on home screen">
+                <h4 class="capitalize text-center font-medium text-xs">larger icons on home screen</h4>
+            </li>
+            <!-- 16 -->
+            <li
+                class="col-span-2 row-span-2 row-start-6 sm:col-start-5 sm:col-end-7 sm:row-start-10 sm:row-span-3 md:col-start-9 md:col-end-13 md:row-start-8 md:row-end-13 overflow-hidden flex flex-col justify-between items-center pt-1 md:pt-4 bg-white rounded-xl">
+                <h4 class="capitalize font-medium text-xs md:text-base">home screen customization</h4>
+                <img class="w-full h-full" src="/assets/16.png" alt="home screen customization">
+            </li>
+            <!-- 17 -->
+            <li
+                class="col-span-2 col-start-3 row-start-8 row-span-2 sm:col-start-5 sm:col-end-6 sm:row-start-8 sm:row-span-2 md:col-span-2 md:row-span-2 relative flex flex-col justify-between items-center bg-white rounded-xl">
+                <img class="w-full h-full rounded-xl" src="/assets/17.jpeg" alt="hiking in maps">
+                <h4 class="absolute bottom-1 capitalize font-medium text-center text-xs md:text-base ">hiking in maps
+                </h4>
+            </li>
+            <!-- 18 -->
+            <li
+                class="col-span-2 row-span-2 sm:col-start-6 sm:row-start-8 sm:row-span-2 md:col-span-3 md:row-span-2 flex flex-col justify-between items-center bg-white rounded-xl">
+                <img class="w-full h-full rounded-xl" src="/assets/18.jpeg" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+<!-- Tailwind Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            // Screens Extends
+            screens: {
+                'sm': '640px',
+                // => @media (min-width: 640px) { ... }
+
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+
+                'lg': '1024px',
+                // => @media (min-width: 1024px) { ... }
+
+                'xl': '1280px',
+                // => @media (min-width: 1280px) { ... }
+
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+            },
+            // Colors Extends
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }
+        }
+    }
+</script>
+
+</html>
